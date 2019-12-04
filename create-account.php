@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+$db['host'] = "localhost";  // DBサーバのURL
+$db['user'] = "root";  // ユーザー名
+$db['pass'] = "root";  // ユーザー名のパスワード
+$db['dbname'] = "haldb";  // データベース名
+// エラーメッセージ, 登録完了メッセージの初期化
+$errorMessage = "";
+?>
 <!DOCTYPE html>
 <html lang="jp">
 
@@ -15,7 +25,7 @@
 
 <body>
   <form action="login.php" method="GET">
-    <div class="login-wrap">
+    <div id="login-wrap">
       <div class="input-wrap">
         <p class="login-text">Create a New Account</p>
         <div class="sub-text">It’s quick and easy.</div>
@@ -24,8 +34,12 @@
         <input type="submit" name="Sign_Up" value="Sign Up" class="login-submit" />
       </div>
     </div>
+    <div id="particles-js"></div>
   </form>
-  <script src="https://ajax.googleapis.coam/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/setting.js"></script>
+  <!-- <script src="js/traslate.js"></script> -->
   <script src="js/script.js"></script>
 </body>
 

@@ -1,0 +1,50 @@
+#login-wrap {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/login.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  /* opacity: 0;
+  transition: 5s;
+  opacity: 1; */
+}
+
+.input-wrap{
+  width: 50vw;
+  margin: 30vh auto;
+}
+
+.input-wrap a {
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.login-submit {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 1rem auto;
+  width: 100%;
+  min-width: 1px;
+  padding: 17px;
+  -webkit-transition: 250ms background ease-in;
+  transition: 250ms background ease-in;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.login-submit:hover, .login-submit:focus {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  -webkit-transition: 250ms background ease-in;
+  transition: 250ms background ease-in;
+}
