@@ -43,35 +43,59 @@ if (!isset($_SESSION["NAME"])) {
     <div class="content">
       <div class="content-wrap">
         <ul class="content-img">
-          <li>
-            <p>Budget</p>
-            <p>Enter available budget</p>
-          </li>
-          <li>
-            <p>Enter shopping information</p>
-            <p>Enter shopping information</p>
-          </li>
+          <figure>
+            <a href="#">
+              <li>
+                <p>Budget</p>
+                <p>Enter available budget</p>
+                <span class="read-more">Read More <i class="ion-android-arrow-forward"></i></span>
+              </li>
+            </a>
+          </figure>
+          <figure>
+            <a href="#">
+              <li>
+                <p>Budget</p>
+                <p>Enter available budget</p>
+              </li>
+            </a>
+          </figure>
         </ul>
         <ul class="content-img">
-          <li>
-            <p>Coupon</p>
-            <p>Enter available budget</p>
-          </li>
-          <li>
-            <p>Remaining Budget</p>
-            <p>Enter available budget</p>
-          </li>
-          <li>
-            <p>User Setting</p>
-            <p>Enter available budget</p>
-          </li>
-          <li>
-            <p>Logout</p>
-            <p>Enter available budget</p>
-          </li>
+          <figure>
+            <a href="#">
+              <li>
+                <p>Budget</p>
+                <p>Enter available budget</p>
+              </li>
+            </a>
+          </figure>
+          <figure>
+            <a href="#">
+              <li>
+                <p>Budget</p>
+                <p>Enter available budget</p>
+              </li>
+            </a>
+          </figure>
+          <figure>
+            <a href="#">
+              <li>
+                <p>Budget</p>
+                <p>Enter available budget</p>
+              </li>
+            </a>
+          </figure>
+          <figure>
+            <a href="#">
+              <li>
+                <p>Budget</p>
+                <p>Enter available budget</p>
+              </li>
+            </a>
+          </figure>
         </ul>
       </div>
-    </div>
     </div>
     <div class="localNavigation">
       <p>ローカルナビゲーション</p>

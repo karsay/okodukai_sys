@@ -101,7 +101,7 @@ main {
   height: 90%;
   /* background: red; */
   position: absolute;
-  top: 70px;
+  top: 65px;
   /* border: 1px solid blue; */
   position: relative;
 }
@@ -113,34 +113,84 @@ ul.content-img {
   justify-content: flex-start;
 }
 
-ul.content-img li{
-  background-image: url(../images/haru.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 38vh;
+
+ul.content-img figure{
+  height: 100%;
+  min-height: 42vh;
   margin: 5px;
-  flex-basis: 23vw;
-  /* flex-grow: 1; */
-  position: relative;
   font-family: 'Georgia';
   text-align: left;
   box-shadow: 3px 3px 3px -2px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  flex-basis: 25vw;
 }
 
-ul.content-img li:nth-of-type(2){
+ul.content-img figure a{
+  background-image: url(../images/haru.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  height: 100%;
+  min-height: 42vh;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+ul.content-img figure:hover a{
+  /* transform: scale(1.05);
+  -webkit-transform: scale(1.05); */
+  /* opacity: 0.5; */
+}
+
+figure:hover .read-more,
+figure:hover .read-more {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+figure li {
+  position: relative;
+}
+
+figure .read-more {
+  display: block;
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 15px;
+  color: #ffffff;
+  right: 0;
+  top: 0;
+  font-weight: 500;
+  position: absolute;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+ul:first-child.content-img figure:nth-of-type(2){
   -webkit-flex-grow: 1;
   flex-grow: 1;
 }
 
-ul.content-img li p {
+
+ul.content-img a li p {
   text-shadow: black 1px 1px 10px;
 }
 
-ul.content-img li p:first-child {
+ul.content-img a li p:first-child {
   font-size: 35px;
+  color: white;
 }
 
-ul.content-img li p:last-child {
+ul.content-img a li p:last-child {
   font-size: 20px;
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.8);
