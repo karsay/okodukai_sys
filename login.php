@@ -26,7 +26,7 @@ if (isset($_POST["login"])) {
     // 入力したユーザーネームを格納
     $userName = $_POST["username"];
     // 入力が確認されたら認証
-    $dsn = sprintf("mysql: host=%s; dbname=%s;", $db["host"], $db["dbname"]);
+    $dsn = sprintf("mysql: host=%s; dbname=%s; charset=utf8", $db["host"], $db["dbname"]);
 
     try {
       $pdo = new PDO($dsn, $db["user"], $db["pass"], array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -38,20 +38,20 @@ if (isset($_POST["login"])) {
       $password = $_POST["password"];
 
       if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        // if (password_verify($password, $row["password"])) {
-          if($password == $row["password"]) {
-            session_regenerate_id(true);
+        if (password_verify($password, $row["password"])) {
+          // if($password == $row["password"]) {
+          session_regenerate_id(true);
 
-            // 入力したIDのユーザ名を取得
-            $id = $row["id"];
-            $sql = "select * from userData where id = $id";
-            $stmt = $pdo->query($sql);
-            foreach ($stmt as $row) {
-              $row["name"]; //ユーザ名
-            }
-            $_SESSION["NAME"] = $row["name"];
-            header("Location: Top.php");
-            exit(); //処理終了
+          // 入力したIDのユーザ名を取得
+          $id = $row["id"];
+          $sql = "select * from userData where id = $id";
+          $stmt = $pdo->query($sql);
+          foreach ($stmt as $row) {
+            $row["name"]; //ユーザ名
+          }
+          $_SESSION["NAME"] = $row["name"];
+          header("Location: home.php");
+          exit(); //処理終了
         } else {
           echo $row["password"], $password;
           // 認証失敗
@@ -80,7 +80,7 @@ if (isset($_POST["login"])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/log-common.css">
   <link rel="stylesheet" type="text/css" href="css/login.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -125,7 +125,7 @@ if (isset($_POST["login"])) {
       <div id="login-wrap">
         <div class="input-wrap">
           <p class="login-text translate">Login</p>
-          <div class="sub-text">Okodzukai System</div>
+          <div class="sub-text">Japan Pocket Money System</div>
           <div class="error-message translate"><?php echo $errorMessage; ?></div>
           <input type="username" name="username" class="login-username" required="true" placeholder="User Name" />
           <input type="password" name="password" class="login-password" required="true" placeholder="Password" />
