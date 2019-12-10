@@ -52,6 +52,7 @@ body {
   -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
   transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
 }
+
 .btn4:hover::before {
   -webkit-transform-origin: left top;
   -ms-transform-origin: left top;
@@ -61,14 +62,14 @@ body {
   transform: scale(1, 1);
 }
 
-ul {
+ul.header-ul {
   overflow: hidden;
   list-style: none;
   margin: 0 auto;
   z-index: 20;
 }
 
-ul li {
+ul.header-ul li {
   display: inline-block;
   padding: 25px 20px 20px 20px;
   font-size: 16px;
@@ -103,61 +104,100 @@ main {
   position: absolute;
   top: 65px;
   /* border: 1px solid blue; */
-  position: relative;
 }
 
-ul.content-img {
+.content-ul {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
+.content-ul li{
+  margin: 3px;
+  flex-basis: 30vw;
+}
 
-ul.content-img figure{
-  height: 100%;
-  min-height: 42vh;
-  margin: 5px;
-  font-family: 'Georgia';
-  text-align: left;
-  box-shadow: 3px 3px 3px -2px rgba(0, 0, 0, 0.8);
+
+.content-ul li:nth-child(2){
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+.snip1397 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
   overflow: hidden;
-  flex-basis: 25vw;
+  background: #2980b9;
+  text-align: left;
+  color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  object-fit: cover;
 }
 
-ul.content-img figure a{
-  background-image: url(../images/haru.jpg);
-  background-size: cover;
-  background-position: center center;
-  display: block;
-  height: 100%;
-  min-height: 42vh;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+.snip1397 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-ul.content-img figure:hover a{
-  /* transform: scale(1.05);
-  -webkit-transform: scale(1.05); */
-  /* opacity: 0.5; */
+.snip1397 > img,
+.snip1397 .image img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  height: 43vh;
+  width: 100%;
+  object-fit: cover;
 }
 
-figure:hover .read-more,
-figure:hover .read-more {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-  transform: translateX(0px);
+.snip1397 > img {
+  vertical-align: top;
+  position: relative;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: 0.7;
+}
+
+.snip1397 .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1), 0px -1px 0 rgba(255, 255, 255, 0.2);
 }
 
-figure li {
-  position: relative;
+.snip1397 .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-figure .read-more {
+.img-cap{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.img-cap p:first-child{
+  font-size: 3rem;
+  color: #fff;
+}
+
+.img-cap p:nth-child(2){
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.snip1397 .read-more {
   display: block;
   opacity: 0;
   -webkit-transform: translateX(-20px);
@@ -168,32 +208,35 @@ figure .read-more {
   padding: 0 15px;
   color: #ffffff;
   right: 0;
-  top: 0;
+  bottom: 0;
   font-weight: 500;
   position: absolute;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
 
-ul:first-child.content-img figure:nth-of-type(2){
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+.snip1397 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
 }
 
-
-ul.content-img a li p {
-  text-shadow: black 1px 1px 10px;
+.snip1397:hover .read-more,
+.snip1397.hover .read-more {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
-
-ul.content-img a li p:first-child {
-  font-size: 35px;
-  color: white;
-}
-
-ul.content-img a li p:last-child {
-  font-size: 20px;
-  margin-top: 10px;
-  color: rgba(255, 255, 255, 0.8);
+.snip1397:hover .image,
+.snip1397.hover .image {
+  bottom: 50px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 .localNavigation {
@@ -206,6 +249,7 @@ ul.content-img a li p:last-child {
   overflow: scroll;
   float: right;
 }
+
 .footer {
   clear: both;
   width: 100vw;

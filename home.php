@@ -29,7 +29,7 @@ if (!isset($_SESSION["NAME"])) {
 <body>
   <header class="header">
     <a href="#"><img src="images/home/logo.png" width="150px"></a>
-    <ul>
+    <ul class="header-ul">
       <li><a href="#" class="btn2">Home</a></li>
       <li><a href="budget.php" class="btn4">Budget</a></li>
       <li><a href="shopping.php" class="btn4">Enter shopping information</a></li>
@@ -42,58 +42,85 @@ if (!isset($_SESSION["NAME"])) {
   <main>
     <div class="content">
       <div class="content-wrap">
-        <ul class="content-img">
-          <figure>
-            <a href="#">
-              <li>
-                <p>Budget</p>
-                <p>Enter available budget</p>
-                <span class="read-more">Read More <i class="ion-android-arrow-forward"></i></span>
-              </li>
-            </a>
-          </figure>
-          <figure>
-            <a href="#">
-              <li>
-                <p>Budget</p>
-                <p>Enter available budget</p>
-              </li>
-            </a>
-          </figure>
+        <ul class="content-ul">
+          <li>
+            <figure class="snip1397">
+              <img src="images/haru.jpg" alt="sample86" />
+              <div class="image">
+                <img src="images/haru.jpg" alt="sample86" />
+                <div class="img-cap">
+                  <p>Budget</p>
+                  <p>You can enter a budget</p>
+                </div>
+              </div>
+              <span class="read-more">
+                Next<i class="ion-android-arrow-forward"></i>
+              </span>
+              <a href="#"></a>
+            </figure>
+          </li>
+          <li>
+            <figure class="snip1397">
+              <img src="images/haru.jpg" alt="sample86" />
+              <div class="image">
+                <img src="images/haru.jpg" alt="sample86" />
+              </div>
+              <span class="read-more">
+                Next<i class="ion-android-arrow-forward"></i>
+              </span>
+              <a href="#"></a>
+            </figure>
+          </li>
         </ul>
-        <ul class="content-img">
-          <figure>
-            <a href="#">
-              <li>
-                <p>Budget</p>
-                <p>Enter available budget</p>
-              </li>
-            </a>
-          </figure>
-          <figure>
-            <a href="#">
-              <li>
-                <p>Budget</p>
-                <p>Enter available budget</p>
-              </li>
-            </a>
-          </figure>
-          <figure>
-            <a href="#">
-              <li>
-                <p>Budget</p>
-                <p>Enter available budget</p>
-              </li>
-            </a>
-          </figure>
-          <figure>
-            <a href="#">
-              <li>
-                <p>Budget</p>
-                <p>Enter available budget</p>
-              </li>
-            </a>
-          </figure>
+        <ul class="content-ul">
+          <li>
+            <figure class="snip1397">
+              <img src="images/haru.jpg" alt="sample86" />
+              <div class="image">
+                <img src="images/haru.jpg" alt="sample86" />
+              </div>
+              <span class="read-more">
+                Next<i class="ion-android-arrow-forward"></i>
+              </span>
+              <a href="#"></a>
+            </figure>
+          </li>
+          <li>
+            <figure class="snip1397">
+              <img src="images/haru.jpg" alt="sample86" />
+              <div class="image">
+                <img src="images/haru.jpg" alt="sample86" />
+              </div>
+              <span class="read-more">
+                Next<i class="ion-android-arrow-forward"></i>
+              </span>
+              <a href="#"></a>
+            </figure>
+          </li>
+          <li>
+            <figure class="snip1397">
+              <img src="images/haru.jpg" alt="sample86" />
+              <div class="image">
+                <img src="images/haru.jpg" alt="sample86" />
+              </div>
+              <span class="read-more">
+                Next<i class="ion-android-arrow-forward"></i>
+              </span>
+              <a href="#"></a>
+            </figure>
+          </li>
+          <li>
+            <figure class="snip1397">
+              <img src="images/haru.jpg" alt="sample86" />
+              <div class="image">
+                <img src="images/haru.jpg" alt="sample86" />
+              </div>
+              <span class="read-more">
+                Next<i class="ion-android-arrow-forward"></i>
+              </span>
+              <a href="#"></a>
+            </figure>
+          </li>
         </ul>
       </div>
     </div>
