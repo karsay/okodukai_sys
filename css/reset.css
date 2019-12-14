@@ -102,24 +102,11 @@ input, select {
 }
 
 
-
-
-
 /* clearfix */
 
 .clearfix:after {
 		content: "";
 		display: block;
 		clear: both;
-}
-
-
-
-
-
-/* スクロールバーを強制表示 */
-
-body{
-	overflow-y:scroll;
 }
 

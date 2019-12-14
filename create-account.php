@@ -2,8 +2,8 @@
 session_start();
 
 $db['host'] = "localhost";  // DBサーバのURL
-$db['user'] = "root";  // ユーザー名
-$db['pass'] = "root";  // ユーザー名のパスワード
+$db['user'] = "karsay";  // ユーザー名
+$db['pass'] = "karsay";  // ユーザー名のパスワード
 $db['dbname'] = "haldb";  // データベース名
 
 $errorMessage = "";
@@ -30,14 +30,13 @@ if (isset($_POST["Sign_Up"])) {
       $stmt = $pdo->prepare("INSERT INTO userData(name, password) VALUES (?, ?)");
       // ハッシュ化してインサート
       $stmt->execute(array($username, password_hash($password, PASSWORD_DEFAULT)));
+      header("Location: home.php");
     } catch (PDOException $e) {
       $errorMessage = "Database error";
       // $e->getMessage();
       // echo $e->getMessage();
     }
   }
-
-  echo $errorMessage;
 }
 ?>
 <!DOCTYPE html>
@@ -61,6 +60,7 @@ if (isset($_POST["Sign_Up"])) {
       <div class="input-wrap">
         <p class="login-text">Create a New Account</p>
         <div class="sub-text">It’s quick and easy.</div>
+        <div class="error-message translate"><?php echo $errorMessage; ?></div>
         <input type="username" name="username" class="login-username" required="true" placeholder="User Name" />
         <input type="password" name="password" class="login-password" required="true" placeholder="Password" />
         <input type="submit" name="Sign_Up" value="Sign Up" class="login-submit" />

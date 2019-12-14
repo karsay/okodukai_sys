@@ -32,7 +32,7 @@
 }
 
 .login-submit:hover, .login-submit:focus {
-  background: rgba(0, 51, 102, 0.8);
+  background: rgba(0, 112, 210, 0.8);
   color: white;
   -webkit-transition: 250ms background ease-in;
   transition: 250ms background ease-in;
