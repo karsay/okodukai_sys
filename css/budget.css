@@ -1,0 +1,110 @@
+#input-wrap {
+  float: left;
+  width: 55vw;
+  height: 100vh;
+  background: #F4F5F7;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #0D264A;
+}
+
+#input-box {
+  margin-top: 10vh;
+}
+
+#input-box .currentbudget {
+  border-bottom: 2px #0D264A solid;
+  padding-bottom: 2vh;
+  width: 30vw;
+  margin: 0 auto;
+}
+
+#input-box .currentbudget p:first-child {
+  font-size: 2rem;
+}
+
+#input-box .currentbudget p:nth-child(2) {
+  margin-top: 2vh;
+  font-size: 1rem;
+}
+
+#input-box .addbudget {
+  margin-top: 45vh;
+}
+
+#input-box .addbudget input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.addbudget {
+	position: relative;
+  width: 30vw;
+  margin: 20px auto;
+}
+
+.addbudget input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: none;
+	border-bottom: 2px solid #1b2538;
+	background: transparent;
+}
+
+.ef input[type='text']:focus {
+	border-bottom: 2px solid #72DAFF;
+	outline: none;
+}
+
+.btn-border {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #0D264A;
+  font-size: 16px;
+  color: #0D264A;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 4px;
+  transition: .4s;
+
+}
+
+.btn-border:hover {
+  background-color: #0D264A;
+  border-color: #72DAFF;
+  color: #FFF;
+  cursor: pointer;
+}
+
+
+
+#output-wrap {
+  float: right;
+  width: 45vw;
+  height: 100vh;
+  background: url(../images/budget/budget.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+
+#output-wrap img {
+  margin-top: 14vh;
+}
+
+#output-wrap p {
+  margin-top: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 10px #000;
+}
+

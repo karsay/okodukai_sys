@@ -23,6 +23,14 @@
 }
 
 
+.login-submit:hover, .login-submit:focus {
+  background: rgba(0, 112, 210, 0.8);
+  color: white;
+  -webkit-transition: 250ms background ease-in;
+  transition: 250ms background ease-in;
+}
+
+
 .create-account {
   color: white;
   text-align: center;
@@ -31,12 +39,6 @@
   cursor: pointer;
 }
 
-.login-submit:hover, .login-submit:focus {
-  background: rgba(0, 112, 210, 0.8);
-  color: white;
-  -webkit-transition: 250ms background ease-in;
-  transition: 250ms background ease-in;
-}
 
 .error-message{
   color: red;
@@ -47,24 +49,6 @@
   margin-top: 15px;
 }
 
-
-@-webkit-keyframes hue-rotate {
-  from {
-    -webkit-filter: grayscale(30%) hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: grayscale(30%) hue-rotate(360deg);
-  }
-}
-
-@keyframes hue-rotate {
-  from {
-    -webkit-filter: grayscale(30%) hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: grayscale(30%) hue-rotate(360deg);
-  }
-}
 /* # sourceMappingURL=login.css.map */
 
 form {
@@ -128,11 +112,13 @@ span.choose {
   height: 100%;
   text-align: left;
 }
+
 .dropdown .select {
   cursor: pointer;
   display: block;
   padding: 10px;
 }
+
 .dropdown .select > i {
   font-size: 13px;
   color: #888;

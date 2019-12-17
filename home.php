@@ -30,7 +30,6 @@ if (!isset($_SESSION["NAME"])) {
   <header class="header">
     <a href="#"><img src="images/home/logo.png" width="120px"></a>
     <ul class="header-ul">
-      <li><a href="#" class="btn2">Home</a></li>
       <li><a href="budget.php" class="btn4">Budget</a></li>
       <li><a href="shopping.php" class="btn4">Enter shopping information</a></li>
       <li><a href="coupon.php" class="btn4">Coupon</a></li>

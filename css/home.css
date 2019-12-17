@@ -72,7 +72,7 @@ main {
 .snip1397 .image img {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-  height: 40vh;
+  height: 41vh;
   width: 100%;
   object-fit: cover;
 }
@@ -81,7 +81,7 @@ main {
 .snip1397 .image img.top {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-  height: 46vh;
+  height: 46.5vh;
 }
 
 .snip1397 > img {

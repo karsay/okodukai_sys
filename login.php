@@ -7,8 +7,8 @@ header("Access-Control-Allow-Origin: https://unpkg.com/glottologist");
 
 // ドライバ呼び出しを使用して MySQL データベースに接続します
 $db['host'] = "localhost";  // DBサーバのURL
-$db['user'] = "karsay";  // ユーザー名
-$db['pass'] = "karsay";  // ユーザー名のパスワード
+$db['user'] = "root";  // ユーザー名
+$db['pass'] = "root";  // ユーザー名のパスワード
 $db['dbname'] = "haldb";  // データベース名
 // エラーメッセージの初期化
 $errorMessage = "";
@@ -141,7 +141,6 @@ if (isset($_POST["login"])) {
   <script src="js/translate.js"></script>
   <script src="js/particles.min.js"></script>
   <script src="js/setting.js"></script>
-  <script src="js/script.js"></script>
 </body>
 
 </html>
