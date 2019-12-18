@@ -1,0 +1,49 @@
+.mainwrap {
+  background: url(../images/coupon/coupon-big2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 49vw;
+  height: 90vh;
+  margin-top: 50px;
+  box-sizing: border-box;
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.localNavigation {
+  text-align: center;
+  background-color: #f4f5f7;
+  color: #0D264A;
+  width: 50vw;
+  float: right;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+
+.localNavigation .coupon {
+  border: 1px solid #888;
+  height: 150px;
+}
+
+.coupon a img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.coupon p {
+  /* border-bottom: 1px solid #0D264A; */
+  padding: 5px;
+}
+
+.coupon a {
+  text-decoration: none;
+  color: #0D264A;
+  font-size: 2vh;
+}

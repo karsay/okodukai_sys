@@ -1,6 +1,6 @@
 #input-wrap {
   float: left;
-  width: 55vw;
+  width: 53vw;
   height: 100vh;
   background: #F4F5F7;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -73,7 +73,7 @@
   padding: 16px 32px;
   border-radius: 4px;
   transition: .4s;
-
+  background: #FFF;
 }
 
 .btn-border:hover {

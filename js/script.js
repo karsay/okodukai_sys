@@ -43,3 +43,11 @@ $('.sel__box__options').click(function () {
     $currentSel.children('.sel__placeholder').text(txt);
     $currentSel.children('select').prop('selectedIndex', index + 1);
 });
+
+
+// 変更完了処理
+var btn = document.getElementById('btn');
+ 
+btn.addEventListener('click', function() {
+  alert("Change completed");
+});

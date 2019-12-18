@@ -195,33 +195,36 @@ function slide() {
       // 春
       show("#f09199", "polygon", 0.8, 10, "bottom", true, 5 ,false);
       $(function(){
+        // jsのパスがうまく通らない場合は下のコメントアウトを外して上のをコメントアウト
         $('#login-wrap').css('background-image', "url(../okodukai_sys/images/haru.jpg)");
-
-        $('#login-wrap').css('background-image', "url(../images/haru.jpg)");
+        // $('#login-wrap').css('background-image', "url(../images/haru.jpg)");
       });
       break;
     case 1:
       // 夏
       show(["#ff7fbf", "#ff7fff", "#bf7fff"], "polygon", 0.2, 10,"none",false, 10, true);
       $(function(){
+                // jsのパスがうまく通らない場合は下のコメントアウトを外して上のをコメントアウト
         $('#login-wrap').css('background-image', "url(../okodukai_sys/images/natu4.jpg)");
-        $('#login-wrap').css('background-image', "url(../images/haru.jpg)");
+        // $('#login-wrap').css('background-image', "url(../images/haru.jpg)");
       });
       break;
     case 2:
       // 秋
       show('f39800', "circle", 0.3, 5, "top", false, 5, false);
       $(function(){
+                // jsのパスがうまく通らない場合は下のコメントアウトを外して上のをコメントアウト
         $('#login-wrap').css('background-image', "url(../okodukai_sys/images/login.jpg)");
-        $('#login-wrap').css('background-image', "url(../images/haru.jpg)");
+        // $('#login-wrap').css('background-image', "url(../images/haru.jpg)");
       });
       break;
     case 3:
       // 冬
       show("#ffffff", "circle", 0.5, 3, "bottom" , false, 5, false);
       $(function(){
+                // jsのパスがうまく通らない場合は下のコメントアウトを外して上のをコメントアウト
         $('#login-wrap').css('background-image', "url(../okodukai_sys/images/huyu.jpg)");
-        $('#login-wrap').css('background-image', "url(../images/haru.jpg)");
+        // $('#login-wrap').css('background-image', "url(../images/haru.jpg)");
       });
       break;
   }

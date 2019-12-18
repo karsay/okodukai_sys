@@ -67,7 +67,7 @@ if (!isset($_SESSION["NAME"])) {
                 <img src="images/home/shopping.jpg" alt="sample86" class="top"/>
                 <div class="img-cap">
                   <p>Enter shopping information</p>
-                  <p>You can enter a budget</p>
+                  <p>You can enter shopping information</p>
                 </div>
               </div>
               <span class="read-more">
@@ -85,7 +85,7 @@ if (!isset($_SESSION["NAME"])) {
                 <img src="images/home/coupon.jpg" alt="sample86" />
                 <div class="img-cap row">
                   <p>Coupon</p>
-                  <p>You can enter a budget</p>
+                  <p>You can check the coupon</p>
                 </div>
               </div>
               <span class="read-more">
@@ -101,7 +101,7 @@ if (!isset($_SESSION["NAME"])) {
                 <img src="images/home/ramune.jpg" alt="sample86" />
                 <div class="img-cap row">
                   <p>Remainder<br> Budget</p>
-                  <p>You can enter a budget</p>
+                  <p>You can check the remaining budget</p>
                 </div>
               </div>
               <span class="read-more">
@@ -117,7 +117,7 @@ if (!isset($_SESSION["NAME"])) {
                 <img src="images/home/setting.jpg" alt="sample86" />
                 <div class="img-cap row">
                   <p>User Setting</p>
-                  <p>You can enter a budget</p>
+                  <p>You can change the settings</p>
                 </div>
               </div>
               <span class="read-more">
@@ -133,7 +133,7 @@ if (!isset($_SESSION["NAME"])) {
                 <img src="images/home/logout.jpg" alt="sample86" />
                 <div class="img-cap row">
                   <p>Logout</p>
-                  <p>You can enter a budget</p>
+
                 </div>
               </div>
               <span class="read-more">
@@ -150,42 +150,42 @@ if (!isset($_SESSION["NAME"])) {
         Available Coupon
       </p>
       <div class="coupon">
-        <a href="#">
+        <a href="coupon.php">
           <p>Coupon Name</p>
           <p>Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.</p>
           <img src="images/home/use.png" width="15px">USE
         </a>
       </div>
       <div class="coupon">
-        <a href="#">
+        <a href="coupon.php">
           <p>Coupon Name</p>
           <p>Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.</p>
           <img src="images/home/use.png" width="15px">USE
         </a>
       </div>
       <div class="coupon">
-        <a href="#">
+        <a href="coupon.php">
           <p>Coupon Name</p>
           <p>Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.</p>
           <img src="images/home/use.png" width="15px">USE
         </a>
       </div>
       <div class="coupon">
-        <a href="#">
+        <a href="coupon.php">
           <p>Coupon Name</p>
           <p>Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.</p>
           <img src="images/home/use.png" width="15px">USE
         </a>
       </div>
       <div class="coupon">
-        <a href="#">
+        <a href="coupon.php">
           <p>Coupon Name</p>
           <p>Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.</p>
           <img src="images/home/use.png" width="15px">USE
         </a>
       </div>
       <div class="coupon">
-        <a href="#">
+        <a href="coupon.php">
           <p>Coupon Name</p>
           <p>Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.Counpon Section.</p>
           <img src="images/home/use.png" width="15px">USE

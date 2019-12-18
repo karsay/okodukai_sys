@@ -31,11 +31,11 @@ session_start();
   <main>
     <div id="input-wrap">
       <div id="input-box">
-        <form action="r_budget.php" method="POST">
+        <form action="r_budget.php" method="GET">
         <ul>
           <li class="inp">
             <label class="ef">
-            <input type="text" placeholder="Bought Item">
+            <input type="text" placeholder="Bought Item" name="itemName">
             <div class="sel sel--black-panther">
               <select name="select-profession" id="select-profession">
                 <option value="" disabled>Choose Genre</option>
@@ -51,11 +51,11 @@ session_start();
               </select>
             </div>
             <label class="ef">
-            <input type="text" placeholder="JPY 0.0">
+            <input type="text" placeholder="JPY 0.0" name="itemPrice">
           </li>
           <li class="inp">
             <label class="ef">
-            <input type="text" placeholder="Bought Item">
+            <input type="text" placeholder="Bought Item" name="itemName">
             <div class="sel sel--black-panther">
               <select name="select-profession" id="select-profession">
                 <option value="" disabled>Choose Genre</option>
@@ -71,11 +71,11 @@ session_start();
               </select>
             </div>
             <label class="ef">
-            <input type="text" placeholder="JPY 0.0">
+            <input type="text" placeholder="JPY 0.0" name="itemPrice">
           </li>
           <li class="inp">
             <label class="ef">
-            <input type="text" placeholder="Bought Item">
+            <input type="text" placeholder="Bought Item" name="itemName">
             <div class="sel sel--black-panther">
               <select name="select-profession" id="select-profession">
                 <option value="" disabled>Choose Genre</option>
@@ -91,10 +91,11 @@ session_start();
               </select>
             </div>
             <label class="ef">
-            <input type="text" placeholder="JPY 0.0">
-          </li>          <li class="inp">
+            <input type="text" placeholder="JPY 0.0" name="itemPrice">
+          </li>    
+          <li class="inp">
             <label class="ef">
-            <input type="text" placeholder="Bought Item">
+            <input type="text" placeholder="Bought Item" name="itemName">
             <div class="sel sel--black-panther">
               <select name="select-profession" id="select-profession">
                 <option value="" disabled>Choose Genre</option>
@@ -110,10 +111,11 @@ session_start();
               </select>
             </div>
             <label class="ef">
-            <input type="text" placeholder="JPY 0.0">
-          </li>          <li class="inp">
+            <input type="text" placeholder="JPY 0.0" name="itemPrice">
+          </li>       
+          <li class="inp">
             <label class="ef">
-            <input type="text" placeholder="Bought Item">
+            <input type="text" placeholder="Bought Item" name="itemName">
             <div class="sel sel--black-panther">
               <select name="select-profession" id="select-profession">
                 <option value="" disabled>Choose Genre</option>
@@ -129,7 +131,7 @@ session_start();
               </select>
             </div>
             <label class="ef">
-            <input type="text" placeholder="JPY 0.0">
+            <input type="text" placeholder="JPY 0.0" name="itemPrice">
           </li>
         </ul>
         <input type="submit" class="btn-border" value="SUBMIT">
@@ -137,6 +139,9 @@ session_start();
       </div>
     </div>
     <div id="img-wrap">
+      <h1>Total</h1>
+      <h2>USD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JPN</h2>
+      <p>0＄</p><p>0JPY</p>
     </div>
   </main>
   <footer class="footer">

@@ -30,16 +30,16 @@ session_start();
   </header>
   <main>
     <div id="input-wrap">
-      <form action="r_budget.php" method="POSt">
+      <form action="r_budget.php" method="POST">
         <div id="input-box">
           <div class="currentbudget">
             <p>Current Budget</p>
-            <p>JPY 150,000</p>
+            <p style="font-family: sans">JPY 150,000</p>
           </div>
           <div class="addbudget button">
             <p>Add budget</p>
             <label class="ef">
-            <input type="text"placeholder="0.0">
+            <input type="text" placeholder="0.0" name="budget">
           </div>
           <input type="submit" class="btn-border" value="SUBMIT">
         </div>

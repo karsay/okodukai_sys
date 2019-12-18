@@ -1,0 +1,44 @@
+main {
+  background: url(../images/r_budget/r_budget.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.engrf{
+  background-image: url(../images/r_budget/Pricing_Table.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.button {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  z-index: 10;
+}
+
+.button a {
+}
+
+
+/* .white-back{
+  width: 50vw;
+  height: 100Vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+} */

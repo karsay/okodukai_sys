@@ -1,10 +1,7 @@
 <?php
 session_start();
 
-$db['host'] = "localhost";  // DBサーバのURL
-$db['user'] = "karsay";  // ユーザー名
-$db['pass'] = "karsay";  // ユーザー名のパスワード
-$db['dbname'] = "haldb";  // データベース名
+include("db_ini.php");
 
 $errorMessage = "";
 $signMessage = "";

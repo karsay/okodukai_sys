@@ -7,6 +7,7 @@ CREATE TABLE `userData` (
   `password` varchar(100) NOT NULL
 ) CHARSET=utf8;
 
+-- idとパスワードは一緒の値
 INSERT INTO `userData` (`id`, `name`, `password`) VALUES
 (1, 'karsay', '$2y$10$38maXmAJmjrU/pvUgjSY7e0wh3zTH/aVaZ8LGoSW2r3PyCwsXoycy'),
 (2, 'test', '$2y$10$66CZTKaAhvBi.C6AgQud1.4cYtsZGlxBGYvmjnUKqTs3aaXh.Pfsm');

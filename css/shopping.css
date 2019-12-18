@@ -1,6 +1,5 @@
 #input-wrap {
   float: left;
-  width: 55vw;
   height: 100vh;
   background: #F4F5F7;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -24,7 +23,6 @@
   margin-bottom: 30px;
   height: 80%;
   text-align: center;
-
 }
 
 #input-box ul {
@@ -88,6 +86,7 @@
   padding: 16px 32px;
   border-radius: 4px;
   transition: .4s;
+  background: #fff;
 }
 
 .btn-border:hover {
@@ -219,4 +218,26 @@
   to {
     opacity: 0;
   }
+}
+
+#img-wrap h1 {
+  margin-top: 100px;
+  font-size: 2rem;
+}
+
+#img-wrap h2 {
+  font-weight: bold;
+  margin-top: 100px;
+  font-size: 3rem;
+}
+
+#img-wrap p {
+  margin-top: 50px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+#img-wrap p:last-child {
+  margin-left: 130px;
 }

@@ -5,13 +5,10 @@ session_start();
 // $db["user"];
 header("Access-Control-Allow-Origin: https://unpkg.com/glottologist");
 
-// ドライバ呼び出しを使用して MySQL データベースに接続します
-$db['host'] = "localhost";  // DBサーバのURL
-$db['user'] = "root";  // ユーザー名
-$db['pass'] = "root";  // ユーザー名のパスワード
-$db['dbname'] = "haldb";  // データベース名
 // エラーメッセージの初期化
 $errorMessage = "";
+
+include("db_ini.php");
 
 // ログインボタンが押された時
 if (isset($_POST["login"])) {
