@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION["NAME"])) {
+  header("Location: Logout");
+  exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="jp">
